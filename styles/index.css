@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Mulish;
+}
+
+
+@font-face {
+    font-family: 'TiemposSB';
+    src: url('/Fonts/TiemposHeadline-Semibold.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'TiemposREG';
+    src: url('/Fonts/TiemposHeadline-Regular.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Mobile First */
+
+.bodymainWrap {
+    height: 40em;
+    width: 100%;
+    background-color: #2EB16A;
+}
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    background-color: #2EB16A;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .navbar .menu-items {
+    display: flex;
+  }
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  
+  .navbar .nav-container a:hover{
+      font-weight: bolder;
+  }
+  
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #0e2431;
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
+
+  .bodysecondaryWrap {
+    padding-top: 5em;
+  }
+
+  .word-wrap-main {
+    margin: 1em;
+    color: white;
+    width: 80%;
+  }
+
+  .About-Us {
+    font-family: TiemposSB;
+    font-size: 2.4em;
+
+  }
+
+  .vp-para {
+    font-size: 1em;
+  }
+
+  .join-waitlist {
+    margin-top: 4em;
+    background-color: #ffffff;
+    border: none;
+    padding: 1.8em 6em;
+    border-radius: 100em;
+    color: #2EB16A;
+    font-weight: 600;
+  }
+
+.learn-more {
+    margin-top: 2em;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1.8em 6em;
+    border-radius: 100em;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+
+.body2Wrap {
+    height: 40em;
+    width: 100%;
+    background-color: #ffffff;
+}
+.bodyWrap {
+    height: 40em;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.word-wrap-2 {
+    margin: 1em;
+    color: rgb(0, 0, 0);
+    width: 80%;
+}
+.word-wrap-3 {
+    padding-top: 4em;
+    margin: 1em;
+    color: rgb(0, 0, 0);
+    width: 80%;
+}
+
+.value-prop {
+    font-size: 2.5em;
+    font-family: TiemposBD;
+    color: #2E4063;
+}
+
+.value-prop-secondary-para {
+    font-size: 1em;
+}
+
+.join-waitlist1 {
+    margin-top: 4em;
+    background-color: #2E4063;
+    border: none;
+    padding: 1.8em 6em;
+    border-radius: 100em;
+    color: white;
+    font-weight: 600;
+}
+
